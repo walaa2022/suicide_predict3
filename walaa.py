@@ -95,7 +95,7 @@ elif Abuse=="Physical&Emotional":
 elif Abuse=="Sexual&Emotional":
     Sexual&Emotional= 6       
 else:
-    Physical&Sexual&Emotional= 7 
+    Abuse= 7 
                
 
 features = pd.DataFrame(df_new, index=[0])
