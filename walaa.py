@@ -68,12 +68,12 @@ if feedback:
 df_new = pd.DataFrame ({'Age': [Age], 'Sex':[Sex], "Race": [Race], 'Education': [Education], 'score':[score], 'subs':[subs], 'legal': [legal], 'Abuse': [Abuse], 'Subst_Dx': [Subst_Dx],'Non_subst_Dx':[Non_subst_Dx] })
 
 # load transformer
-transformer = pkl.load(open(r'https://github.com/walaa2022/suicide_predict3/blob/main/transformer.pkl','rb'))
+transformer = pkl.load(open(r'transformer.pkl','rb'))
 #apply transformer on inputs
 x_new = transformer.transform (df_new)
 
 # load model                      
-loaded_model = pkl.load(open(r'C:\Users\LENOVO\Downloads\log_reg.pkl' ,'rb'))
+loaded_model = pkl.load(open(r'log_reg.pkl' ,'rb'))
 
 
 #predict the output
