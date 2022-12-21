@@ -3,8 +3,6 @@ import pickle as pkl
 import base64
 import pandas as pd
 
-from sklearn.preprocessing import StandardScaler
-scal=StandardScaler()
 
 st.title ('Suicide prediction App')
 st.image ('https://www.chathamsafetynet.org/wp-content/uploads/2021/08/Copy-of-Copy-of-PST-Logo-background-e1628697628477.png')
