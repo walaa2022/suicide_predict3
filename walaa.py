@@ -68,21 +68,17 @@ if feedback:
 df_new = pd.DataFrame ({'Age': [Age], 'Sex':[Sex], "Race": [Race], 'Education': [Education], 'score':[score], 'subs':[subs], 'legal': [legal], 'Abuse': [Abuse], 'Subst_Dx': [Subst_Dx],'Non_subst_Dx':[Non_subst_Dx] })
 
 # load transformer
-transformer = pkl.load(open(r'.\transformer.pkl','rb'))
+transformer = pkl.load(open('transformer.pkl','rb'))
 #apply transformer on inputs
 x_new = transformer.transform (df_new)
 
 # load model                      
-loaded_model = pkl.load(open(r'.\log_reg.pkl' ,'rb'))
+loaded_model = pkl.load(open('log_reg.pkl' ,'rb'))
 
 
 #predict the output
 predictx= loaded_model.predict(x_new)[0]
 
-#file_ = open("kramer_gif.gif", "rb")
-#contents = loaded_model.read()
-#data_url = base64.b64encode(contents).decode("utf-8")
-#loaded_model.close()
 
 if st.button("Predict"): 
     if(predictx==1):
