@@ -6,7 +6,8 @@ seaborn=0.11.2
 sklearn=1.0.2
 streamlit=1.13.0
 xgboost=1.6.2
-pickle 
+pickle
+StanderScaler 
 -----
 -----
 IPython =7.12.0
