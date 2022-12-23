@@ -7,7 +7,8 @@ sklearn=1.0.2
 streamlit=1.13.0
 xgboost=1.6.2
 pickle
-StanderScaler 
+StanderScaler
+scikit-learn
 -----
 -----
 IPython =7.12.0
